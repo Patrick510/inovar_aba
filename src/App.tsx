@@ -1,9 +1,5 @@
 import { useState } from "react";
 import HeaderDiv from "./components/HeaderDiv";
-import SectionDiv from "./components/sections/SectionDiv";
-import SectionAbout from "./components/sections/SectionAbout";
-import SectionTeam from "./components/sections/SectionTeam";
-import SectionContact from "./components/sections/SectionContact";
 import FooterDiv from "./components/FooterDiv";
 import Section from "./components/Section";
 
@@ -29,6 +25,7 @@ export default function InovarABALanding() {
         />
       </header>
 
+      {/* Section */}
       <Section scrollToSection={scrollToSection} />
 
       {/* Footer */}
