@@ -21,8 +21,8 @@ export default function MissionCarousel() {
       alt: "Crianças em atividades terapêuticas",
     },
     {
-      src: "/placeholder.svg?height=400&width=500",
-      alt: "Ambiente acolhedor da clínica",
+      src: "/atividade2.jpg?height=400&width=500",
+      alt: "Atividades de diversão",
     },
     {
       src: "/dinamica2.jpg?height=400&width=500",
