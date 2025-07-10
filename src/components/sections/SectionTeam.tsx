@@ -11,13 +11,13 @@ export default function SectionTeam() {
     {
       name: "Animeres Duarte",
       specialty: "Pedagoga Clínica - ABA",
-      image: "/animeres.png?height=300&width=300",
+      image: "/modelo.png?height=300&width=300",
       bgStyle: "bg-gradient-to-br from-rose-50 via-pink-25 to-purple-50",
     },
     {
-      name: "Dra. Ana Costa",
-      specialty: "Psicóloga Infantil",
-      image: "/modelo.png?height=300&width=300",
+      name: "Ana Paula Silva",
+      specialty: "Pedagoga e Coordenadora Clínica - ABA",
+      image: "/anapaula.png?height=300&width=300",
       bgStyle: "bg-gradient-to-br from-amber-50 via-yellow-25 to-orange-50",
     },
     {
