@@ -28,16 +28,13 @@ export default function Section({ scrollToSection }: SectionProps) {
         <SectionAbout />
       </section>
 
-      <div className="bg-gradient-to-r from-teal-50 to-pink-50 rounded-2xl p-8">
+      {/* Misson Section */}
+      <section className="bg-gradient-to-r from-teal-50 to-pink-50 rounded-2xl p-8">
         <MissionCarousel />
-      </div>
+      </section>
 
       {/* Team Section */}
-      <section
-        id="team"
-        className="py-20 bg-gray-50"
-        style={{ marginLeft: "3rem", marginRight: "3rem" }}
-      >
+      <section id="team" className="py-20 bg-gray-50 ">
         <SectionTeam />
       </section>
 
