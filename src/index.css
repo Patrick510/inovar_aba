@@ -76,6 +76,26 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra vertical */
+  height: 8px; /* Altura da barra horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor do fundo da trilha */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7a4b37; /* Cor da barra de rolagem */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #764936; /* Cor quando passa o mouse */
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

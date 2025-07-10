@@ -55,12 +55,12 @@ export default function FooterDiv({ scrollToSection }: FooterDivProps) {
         <div className="space-y-4">
           <h3 className="text-lg font-semibold">Contato</h3>
           <div className="space-y-2 text-gray-400">
-            <p>(11) 9999-9999</p>
+            <p>(67) 9317-1331</p>
             <p>contato@inovaraba.com.br</p>
             <p>
-              Rua das Flores, 123
+              R. Mário César Mancini, 1329
               <br />
-              São Paulo, SP
+              Três Lagoas, MS
             </p>
           </div>
         </div>

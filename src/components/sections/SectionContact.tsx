@@ -27,7 +27,7 @@ export default function SectionContact() {
               <Phone className="h-6 w-6 text-teal-500" />
               <div>
                 <h3 className="font-semibold text-gray-900">Telefone</h3>
-                <p className="text-gray-600">(11) 9999-9999</p>
+                <p className="text-gray-600">(67) 9317-1331</p>
               </div>
             </div>
 
@@ -44,9 +44,9 @@ export default function SectionContact() {
               <div>
                 <h3 className="font-semibold text-gray-900">Endereço</h3>
                 <p className="text-gray-600">
-                  Rua das Flores, 123
+                  R. Mário César Mancini, 1329
                   <br />
-                  São Paulo, SP - 01234-567
+                  Três Lagoas, MS - 79645-250
                 </p>
               </div>
             </div>
@@ -66,9 +66,7 @@ export default function SectionContact() {
 
         <Card className="p-8">
           <CardContent className="space-y-6">
-            <h3 className="text-2xl font-bold text-gray-900">
-              Envie uma Mensagem
-            </h3>
+            <h3 className="text-2xl font-bold text-gray-900">Falo Conosco</h3>
             <form className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
