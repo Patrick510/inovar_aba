@@ -1,3 +1,4 @@
+import MissionCarousel from "./MissionCarousel";
 import SectionAbout from "./sections/SectionAbout";
 import SectionContact from "./sections/SectionContact";
 import SectionDiv from "./sections/SectionDiv";
@@ -26,6 +27,10 @@ export default function Section({ scrollToSection }: SectionProps) {
       >
         <SectionAbout />
       </section>
+
+      <div className="bg-gradient-to-r from-teal-50 to-pink-50 rounded-2xl p-8">
+        <MissionCarousel />
+      </div>
 
       {/* Team Section */}
       <section

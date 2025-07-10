@@ -1,6 +1,5 @@
-import { Brain, Heart, Users } from "lucide-react";
+import { Brain, Heart, IdCard, Users } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
-import MissionCarousel from "../MissionCarousel";
 
 export default function SectionAbout() {
   return (
@@ -16,8 +15,8 @@ export default function SectionAbout() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 mb-16">
-        <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+      <div className="grid md:grid-cols-4 gap-8 mb-16">
+        <Card className="text-center p-4 hover:shadow-lg transition-shadow">
           <CardContent className="space-y-4">
             <Brain className="h-12 w-12 text-teal-500 mx-auto" />
             <h3 className="text-xl font-semibold text-gray-900">
@@ -30,7 +29,7 @@ export default function SectionAbout() {
           </CardContent>
         </Card>
 
-        <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+        <Card className="text-center p-4 hover:shadow-lg transition-shadow">
           <CardContent className="space-y-4">
             <Users className="h-12 w-12 text-pink-400 mx-auto" />
             <h3 className="text-xl font-semibold text-gray-900">
@@ -42,7 +41,7 @@ export default function SectionAbout() {
           </CardContent>
         </Card>
 
-        <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+        <Card className="text-center p-4 hover:shadow-lg transition-shadow">
           <CardContent className="space-y-4">
             <Heart className="h-12 w-12 text-yellow-400 mx-auto" />
             <h3 className="text-xl font-semibold text-gray-900">
@@ -54,11 +53,18 @@ export default function SectionAbout() {
             </p>
           </CardContent>
         </Card>
-      </div>
 
-      {/* Mission Section */}
-      <div className="bg-gradient-to-r from-teal-50 to-pink-50 rounded-2xl p-8">
-        <MissionCarousel />
+        <Card className="text-center p-4 hover:shadow-lg transition-shadow">
+          <CardContent className="space-y-4">
+            <IdCard className="h-12 w-12 text-green-400 mx-auto" />
+            <h3 className="text-xl font-semibold text-gray-900">AtivaMAX</h3>
+            <p className="text-gray-600">
+              O AtivaMAX Saúde é o seu cartão de descontos com acesso a
+              consultas médicas e terapêuticas, exames e medicamentos com
+              valores mais acessíveis.
+            </p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );

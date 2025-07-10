@@ -45,7 +45,7 @@ export default function SectionDiv({ scrollToSection }: SectionDivProps) {
         </div>
         <div className="relative">
           <img
-            src="/placeholder.svg?height=500&width=600"
+            src="/vite.svg?height=500&width=600"
             alt="Terapia ABA"
             width="600"
             height="500"
