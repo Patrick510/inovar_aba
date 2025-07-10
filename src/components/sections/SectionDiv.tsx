@@ -10,18 +10,17 @@ interface SectionDivProps {
 export default function SectionDiv({ scrollToSection }: SectionDivProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Array com as imagens do carrossel
   const images = [
     {
       src: "/ben2.jpeg?height=500&width=400",
       alt: "Terapia ABA - Sessão Individual",
     },
     {
-      src: "/placeholder.svg?height=500&width=400",
+      src: "/ben1.jpeg?height=500&width=400",
       alt: "Terapia ABA - Atividades Lúdicas",
     },
     {
-      src: "/placeholder.svg?height=500&width=400",
+      src: "/ben3.jpeg?height=500&width=400",
       alt: "Terapia ABA - Desenvolvimento Social",
     },
   ];
