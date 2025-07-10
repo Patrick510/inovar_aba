@@ -5,7 +5,7 @@ export default function MissionCarousel() {
 
   const images = [
     {
-      src: "/placeholder.svg?height=400&width=500",
+      src: "/dinamica1.jpg?height=400&width=500",
       alt: "Terapia ABA em ação",
     },
     {
@@ -17,7 +17,7 @@ export default function MissionCarousel() {
       alt: "Ambiente acolhedor da clínica",
     },
     {
-      src: "/placeholder.svg?height=400&width=500",
+      src: "/dinamica2.jpg?height=400&width=500",
       alt: "Profissionais trabalhando com crianças",
     },
   ];

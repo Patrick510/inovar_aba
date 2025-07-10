@@ -3,8 +3,8 @@ import { Card, CardContent } from "../ui/card";
 export default function SectionTeam() {
   const teamMembers = [
     {
-      name: "Dra. Yaponira",
-      specialty: "Psicóloga Clínica - ABA",
+      name: "Dra. Yaponira Barradas",
+      specialty: "Neuropsicóloga Clínica - ABA",
       image: "/yaponira.png?height=300&width=300",
       bgStyle: "bg-gradient-to-br from-teal-50 via-cyan-25 to-blue-50",
     },
