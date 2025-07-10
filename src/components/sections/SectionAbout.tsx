@@ -1,7 +1,42 @@
-import { Brain, Heart, IdCard, Users } from "lucide-react";
+import { Brain, Heart, BadgeIcon as IdCard, Users } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 
 export default function SectionAbout() {
+  const features = [
+    {
+      icon: Brain,
+      title: "Baseado em Evidências",
+      description:
+        "Utilizamos métodos cientificamente comprovados para garantir os melhores resultados.",
+      color: "text-teal-500",
+      bgColor: "bg-teal-50",
+    },
+    {
+      icon: Users,
+      title: "Equipe Especializada",
+      description:
+        "Profissionais altamente qualificados e certificados em ABA.",
+      color: "text-pink-400",
+      bgColor: "bg-pink-50",
+    },
+    {
+      icon: Heart,
+      title: "Cuidado Personalizado",
+      description:
+        "Cada plano de tratamento é único e adaptado às necessidades individuais.",
+      color: "text-yellow-400",
+      bgColor: "bg-yellow-50",
+    },
+    {
+      icon: IdCard,
+      title: "AtivaMAX",
+      description:
+        "O AtivaMAX Saúde é o seu cartão de descontos com acesso a consultas médicas e terapêuticas, exames e medicamentos com valores mais acessíveis.",
+      color: "text-green-400",
+      bgColor: "bg-green-50",
+    },
+  ];
+
   return (
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
@@ -15,56 +50,33 @@ export default function SectionAbout() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-4 gap-8 mb-16">
-        <Card className="text-center p-4 hover:shadow-lg transition-shadow">
-          <CardContent className="space-y-4">
-            <Brain className="h-12 w-12 text-teal-500 mx-auto" />
-            <h3 className="text-xl font-semibold text-gray-900">
-              Baseado em Evidências
-            </h3>
-            <p className="text-gray-600">
-              Utilizamos métodos cientificamente comprovados para garantir os
-              melhores resultados.
-            </p>
-          </CardContent>
-        </Card>
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        {features.map((feature, index) => {
+          const IconComponent = feature.icon;
+          return (
+            <Card
+              key={index}
+              className="text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full"
+            >
+              <CardContent className="p-6 flex flex-col items-center space-y-4 h-full">
+                {/* Ícone com fundo colorido */}
+                <div className={`${feature.bgColor} p-4 rounded-full`}>
+                  <IconComponent className={`h-12 w-12 ${feature.color}`} />
+                </div>
 
-        <Card className="text-center p-4 hover:shadow-lg transition-shadow">
-          <CardContent className="space-y-4">
-            <Users className="h-12 w-12 text-pink-400 mx-auto" />
-            <h3 className="text-xl font-semibold text-gray-900">
-              Equipe Especializada
-            </h3>
-            <p className="text-gray-600">
-              Profissionais altamente qualificados e certificados em ABA.
-            </p>
-          </CardContent>
-        </Card>
+                {/* Título */}
+                <h3 className="text-xl font-semibold text-gray-900 min-h-[3rem] flex items-center">
+                  {feature.title}
+                </h3>
 
-        <Card className="text-center p-4 hover:shadow-lg transition-shadow">
-          <CardContent className="space-y-4">
-            <Heart className="h-12 w-12 text-yellow-400 mx-auto" />
-            <h3 className="text-xl font-semibold text-gray-900">
-              Cuidado Personalizado
-            </h3>
-            <p className="text-gray-600">
-              Cada plano de tratamento é único e adaptado às necessidades
-              individuais.
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="text-center p-4 hover:shadow-lg transition-shadow">
-          <CardContent className="space-y-4">
-            <IdCard className="h-12 w-12 text-green-400 mx-auto" />
-            <h3 className="text-xl font-semibold text-gray-900">AtivaMAX</h3>
-            <p className="text-gray-600">
-              O AtivaMAX Saúde é o seu cartão de descontos com acesso a
-              consultas médicas e terapêuticas, exames e medicamentos com
-              valores mais acessíveis.
-            </p>
-          </CardContent>
-        </Card>
+                {/* Descrição */}
+                <p className="text-gray-600 leading-relaxed flex-grow text-center">
+                  {feature.description}
+                </p>
+              </CardContent>
+            </Card>
+          );
+        })}
       </div>
     </div>
   );
