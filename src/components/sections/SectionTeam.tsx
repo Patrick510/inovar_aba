@@ -3,9 +3,9 @@ import { Card, CardContent } from "../ui/card";
 export default function SectionTeam() {
   const teamMembers = [
     {
-      name: "Dra. Maria Silva",
+      name: "Dra. Yaponira",
       specialty: "Psicóloga Clínica - ABA",
-      image: "/modelo.png?height=300&width=300",
+      image: "/yaponira.png?height=300&width=300",
       bgStyle: "bg-gradient-to-br from-teal-50 via-cyan-25 to-blue-50",
     },
     {
@@ -39,11 +39,14 @@ export default function SectionTeam() {
           nossos pacientes.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div
+        className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+        id="card-functi"
+      >
         {teamMembers.map((member, index) => (
           <Card
             key={index}
-            className="overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300"
+            className="py-0 gap-0 overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300"
           >
             <div className="relative h-64 flex items-center justify-center">
               {/* Background com gradiente pastel */}
