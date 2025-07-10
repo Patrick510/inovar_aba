@@ -4,19 +4,19 @@ export default function SectionTeam() {
   const teamMembers = [
     {
       name: "Dra. Yaponira Barradas",
-      specialty: "Neuropsicóloga Clínica - ABA",
+      specialty: "Neuropsicóloga",
       image: "/yaponira.png?height=300&width=300",
       bgStyle: "bg-gradient-to-br from-teal-50 via-cyan-25 to-blue-50",
     },
     {
       name: "Animeres Duarte",
-      specialty: "Pedagoga Clínica - ABA",
+      specialty: "Pedagoga",
       image: "/modelo.png?height=300&width=300",
       bgStyle: "bg-gradient-to-br from-rose-50 via-pink-25 to-purple-50",
     },
     {
       name: "Ana Paula Silva",
-      specialty: "Pedagoga e Coordenadora Clínica - ABA",
+      specialty: "Pedagoga e Coordenadora",
       image: "/anapaula.png?height=300&width=300",
       bgStyle: "bg-gradient-to-br from-amber-50 via-yellow-25 to-orange-50",
     },
@@ -39,10 +39,7 @@ export default function SectionTeam() {
           nossos pacientes.
         </p>
       </div>
-      <div
-        className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-        id="card-functi"
-      >
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
           <Card
             key={index}
