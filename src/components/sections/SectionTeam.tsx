@@ -109,11 +109,11 @@ export default function SectionTeam() {
               {/* Imagem Section */}
               <div className="relative h-72 overflow-hidden">
                 {/* Background com gradiente */}
-                <div className={`absolute inset-0 ${member.bgStyle}`} />
+                <div className={`absolute inset-0 z-0 ${member.bgStyle}`} />
 
                 {/* Decorative elements */}
-                <div className="absolute top-4 right-4 w-16 h-16 bg-white/20 rounded-full blur-xl" />
-                <div className="absolute bottom-6 left-4 w-8 h-8 bg-white/30 rounded-full blur-lg" />
+                <div className="absolute top-4 right-4 w-16 h-16 bg-white/20 rounded-full blur-xl z-10" />
+                <div className="absolute bottom-6 left-4 w-8 h-8 bg-white/30 rounded-full blur-lg z-10" />
 
                 {/* Imagem enquadrada da cintura para cima */}
                 <img
@@ -121,15 +121,12 @@ export default function SectionTeam() {
                   alt={member.name}
                   width="300"
                   height="300"
-                  className="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-110"
+                  className="relative z-20 w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-110"
                   style={{ objectPosition: "center 20%" }}
                 />
 
-                {/* Overlay com gradiente sutil */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-white/10" />
-
                 {/* Ícone da especialidade */}
-                <div className="absolute bottom-4 right-4">
+                <div className="absolute bottom-4 right-4 z-30">
                   <div
                     className={`${accentClasses.iconBg} p-2 rounded-full backdrop-blur-sm`}
                   >
@@ -154,6 +151,16 @@ export default function SectionTeam() {
                   <p className={`font-semibold ${accentClasses.text}`}>
                     {member.specialty}
                   </p>
+
+                  {/* Rating stars */}
+                  <div className="flex justify-center space-x-1 pt-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className={`w-4 h-4 fill-current ${accentClasses.text}`}
+                      />
+                    ))}
+                  </div>
                 </div>
 
                 {/* Hover effect overlay */}
