@@ -20,10 +20,10 @@ export default function MissionCarousel() {
       src: "/dinamica3.jpg?height=400&width=500",
       alt: "Crianças em atividades terapêuticas",
     },
-    {
-      src: "/atividade2.jpg?height=400&width=500",
-      alt: "Atividades de diversão",
-    },
+    // {
+    //   src: "/atividade2.jpg?height=400&width=500",
+    //   alt: "Atividades de diversão",
+    // },
     {
       src: "/dinamica2.jpg?height=400&width=500",
       alt: "Profissionais trabalhando com crianças",
