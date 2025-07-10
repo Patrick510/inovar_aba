@@ -68,7 +68,7 @@ export default function MissionCarousel() {
             </div>
 
             <h3 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Transformando
+              Transformar
               <span className="bg-gradient-to-r from-teal-500 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
                 {" "}
                 Vidas
