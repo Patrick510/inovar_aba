@@ -9,9 +9,9 @@ export default function SectionTeam() {
       bgStyle: "bg-gradient-to-br from-teal-50 via-cyan-25 to-blue-50",
     },
     {
-      name: "Dr. João Santos",
-      specialty: "Analista do Comportamento",
-      image: "/modelo.png?height=300&width=300",
+      name: "Animeres Duarte",
+      specialty: "Pedagoga Clínica - ABA",
+      image: "/animeres.png?height=300&width=300",
       bgStyle: "bg-gradient-to-br from-rose-50 via-pink-25 to-purple-50",
     },
     {
