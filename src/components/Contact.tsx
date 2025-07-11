@@ -1,7 +1,7 @@
 import type React from "react";
 
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { MapPin, Clock, Send } from "lucide-react";
 import zap from "@/assets/whatsapp.svg";
 
 export default function Contact() {
@@ -21,14 +21,16 @@ export default function Contact() {
 
     const encodedText = encodeURIComponent(text);
 
-    const whatsappNumber = "5567993171331"; // DDI + DDD + número, sem +
+    const whatsappNumber = "5567993171331";
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
-    window.open(whatsappURL, "_blank"); // Abre o WhatsApp em nova aba
+    window.open(whatsappURL, "_blank");
   };
 
-  const ZapIcon = () => <img src={zap} alt="WhatsApp" className="w-6 h-6" />;
+  const ZapIcon = () => {
+    return <img src={zap} alt="WhatsApp" className="w-6 h-6" />;
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -55,7 +57,7 @@ export default function Contact() {
     {
       icon: Clock,
       title: "Horário",
-      info: "Segunda à Sexta\n8:00 - 18:00",
+      info: "Segunda à Sexta\n7:00 - 17:00",
       link: "#",
     },
   ];
@@ -71,9 +73,8 @@ export default function Contact() {
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Vamos
+            Vamos{" "}
             <span className="bg-gradient-to-r from-teal-500 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
-              {" "}
               Conversar?
             </span>
           </h2>
@@ -183,7 +184,7 @@ export default function Contact() {
         </div>
 
         {/* Map placeholder */}
-        <div className="overflow-hidden rounded-2xl h-64 md:h-80 mt-6">
+        <div className="overflow-hidden rounded-2xl h-64 md:h-80 mt-10">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.5485496528504!2d-51.687970924750495!3d-20.769084380816103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9490990007029f59%3A0x4dd17511d8125abf!2sInovar%20ABA!5e0!3m2!1spt-BR!2sbr!4v1752240848984!5m2!1spt-BR!2sbr"
             width="100%"
