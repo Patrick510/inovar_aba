@@ -45,7 +45,7 @@ export default function Contact() {
       icon: MapPin,
       title: "Endereço",
       info: "R. Mário César Mancini, 1329\nTrês Lagoas, MS",
-      link: "#",
+      link: "https://maps.app.goo.gl/9Z9fWG45iiqm6zfq6",
     },
     {
       icon: Clock,
@@ -105,11 +105,16 @@ export default function Contact() {
             </div>
 
             {/* Map placeholder */}
-            <div className="bg-gray-200 rounded-2xl h-64 md:h-80 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <MapPin className="w-12 h-12 mx-auto mb-2" />
-                <p>Mapa da localização</p>
-              </div>
+            <div className="overflow-hidden rounded-2xl h-64 md:h-80">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.5485496528504!2d-51.687970924750495!3d-20.769084380816103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9490990007029f59%3A0x4dd17511d8125abf!2sInovar%20ABA!5e0!3m2!1spt-BR!2sbr!4v1752240848984!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
 
