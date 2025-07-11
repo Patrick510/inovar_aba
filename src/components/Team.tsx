@@ -10,6 +10,7 @@ export default function Team() {
       image: "/yaponira.png?height=300&width=300",
       description:
         "Focado em terapias comportamentais e desenvolvimento de habilidades sociais.",
+      color: "#EDFDFF",
     },
     {
       name: "Ana Paula Silva",
@@ -17,14 +18,15 @@ export default function Team() {
       image: "/anapaula.png?height=300&width=300",
       description:
         "Especialista em ABA com mais de 8 anos de experiência no desenvolvimento infantil.",
+      color: "#F6F4FF",
     },
-    {
-      name: "Guiomar",
-      role: "Educadora Física",
-      image: "/placeholder.svg?height=300&width=300",
-      description:
-        "Especializada em intervenções precoces e programas de comunicação funcional.",
-    },
+    // {
+    //   name: "Guiomar",
+    //   role: "Educadora Física",
+    //   image: "/placeholder.svg?height=300&width=300",
+    //   description:
+    //     "Especializada em intervenções precoces e programas de comunicação funcional.",
+    // },
   ];
 
   return (
@@ -55,12 +57,13 @@ export default function Team() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden"
+              className="rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 overflow-hidden"
             >
               <div className="aspect-square overflow-hidden">
                 <img
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
+                  style={{ backgroundColor: member.color }}
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
               </div>

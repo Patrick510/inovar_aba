@@ -102,7 +102,7 @@ export default function Mission() {
 
             {/* Replace the Stats section with Values */}
             {/* Values */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 pt-6 md:pt-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pt-6 md:pt-8">
               <div className="text-center md:text-left">
                 <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center mb-3 mx-auto md:mx-0">
                   <Heart className="w-6 h-6 text-white" />
@@ -121,7 +121,7 @@ export default function Mission() {
                 </div>
                 <div className="text-sm text-gray-600">Especializada</div>
               </div>
-              <div className="text-center md:text-left">
+              <div className="text-center md:text-left col-span-2 md:col-span-1">
                 <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-3 mx-auto md:mx-0">
                   <Target className="w-6 h-6 text-white" />
                 </div>
