@@ -1,9 +1,8 @@
-"use client";
-
 import type React from "react";
 
 import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import zap from "@/assets/whatsapp.svg";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -29,6 +28,8 @@ export default function Contact() {
     window.open(whatsappURL, "_blank"); // Abre o WhatsApp em nova aba
   };
 
+  const ZapIcon = () => <img src={zap} alt="WhatsApp" className="w-6 h-6" />;
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -40,16 +41,10 @@ export default function Contact() {
 
   const contactInfo = [
     {
-      icon: Phone,
+      icon: ZapIcon,
       title: "Telefone",
       info: "(67) 9317-1331",
       link: "tel:+5567993171331",
-    },
-    {
-      icon: Mail,
-      title: "Email",
-      info: "inovarabagestao@gmail.com",
-      link: "mailto:inovarabagestao@gmail.com",
     },
     {
       icon: MapPin,

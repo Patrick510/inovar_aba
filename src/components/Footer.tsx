@@ -93,7 +93,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
                 <Mail className="w-5 h-5 text-teal-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-gray-400 break-words">
-                    cinovarabagestao@gmail.com
+                    centromultidisciplinardepsicol@gmail.com
                   </p>
                 </div>
               </div>
