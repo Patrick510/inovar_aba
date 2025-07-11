@@ -6,18 +6,18 @@ export default function Team() {
   const teamMembers = [
     {
       name: "Dra. Yaponira Barradas",
-      role: "Neuropsicóloga",
+      role: "Neuropsicóloga | Especialista ABA",
       image: "/yaponira.png?height=300&width=300",
       description:
-        "Focado em terapias comportamentais e desenvolvimento de habilidades sociais.",
+        "Focado em terapias comportamentais e desenvolvimento de habilidades sociais. Abordagem Análise de Comportamento e Terapia Cognitiva Comportamental",
       color: "#EDFDFF",
     },
     {
       name: "Ana Paula Silva",
-      role: "Pedagoga e Coordenadora",
+      role: "Pedagoga | Coordenadora",
       image: "/anapaula.png?height=300&width=300",
       description:
-        "Especialista em ABA com mais de 8 anos de experiência no desenvolvimento infantil.",
+        "Pedagoga especializada em Letramento e com formação em Análise do Comportamento Aplicada (ABA), Trabalho voltado ao desenvolvimento de habilidades e potencialização do aprendizado em crianças. ",
       color: "#F6F4FF",
     },
     // {

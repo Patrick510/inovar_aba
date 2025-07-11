@@ -192,7 +192,6 @@ export default function Contact() {
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-teal-500 to-pink-400 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center"
-                onSubmit={handleSubmit}
               >
                 Enviar Mensagem
                 <Send className="ml-2 w-5 h-5" />
