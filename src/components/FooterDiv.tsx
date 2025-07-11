@@ -61,7 +61,7 @@ export default function FooterDiv({ scrollToSection }: FooterDivProps) {
           <h3 className="text-base md:text-lg font-semibold">Contato</h3>
           <div className="space-y-2 text-gray-400 text-sm md:text-base">
             <p className="break-words">(67) 9317-1331</p>
-            <p className="break-words">contato@inovaraba.com.br</p>
+            <p className="break-words">inovarabagestao@gmail.com</p>
             <p className="break-words">
               R. Mário César Mancini, 1329
               <br />

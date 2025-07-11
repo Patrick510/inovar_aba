@@ -23,9 +23,13 @@ export default function Footer({ scrollToSection }: FooterProps) {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    // { icon: Facebook, href: "#", label: "Facebook" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/inovar_aba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      label: "Instagram",
+    },
+    // { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
 
   return (
@@ -96,7 +100,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
                 <Mail className="w-5 h-5 text-teal-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-gray-400 break-words">
-                    contato@inovaraba.com.br
+                    cinovarabagestao@gmail.com
                   </p>
                 </div>
               </div>

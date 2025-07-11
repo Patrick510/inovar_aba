@@ -66,7 +66,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
               </div>
               <div className="flex items-center justify-center lg:justify-start">
                 <Mail className="w-4 h-4 mr-2 text-teal-500" />
-                contato@inovaraba.com.br
+                inovarabagestao@gmail.com
               </div>
             </div>
           </div>

@@ -48,8 +48,8 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      info: "contato@inovaraba.com.br",
-      link: "mailto:contato@inovaraba.com.br",
+      info: "inovarabagestao@gmail.com",
+      link: "mailto:inovarabagestao@gmail.com",
     },
     {
       icon: MapPin,

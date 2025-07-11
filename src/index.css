@@ -88,12 +88,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7a4b37; /* Cor da barra de rolagem */
+  background: #3db5a8; /* Cor da barra de rolagem */
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #764936; /* Cor quando passa o mouse */
+  background: #67cfc3; /* Cor quando passa o mouse */
 }
 
 .dark {
