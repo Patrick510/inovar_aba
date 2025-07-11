@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 interface HeaderProps {
@@ -13,6 +14,8 @@ export default function Header({
   setIsMenuOpen,
   scrollToSection,
 }: HeaderProps) {
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "Sobre" },
@@ -21,8 +24,24 @@ export default function Header({
     { id: "contact", label: "Contato" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${
+        isScrolled
+          ? "bg-white/80 backdrop-blur-md border-b border-gray-200/50 shadow-lg"
+          : "bg-white/95 backdrop-blur-sm border-b border-gray-200"
+      }`}
+    >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -68,7 +87,7 @@ export default function Header({
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 py-4">
+          <div className="md:hidden border-t border-gray-200/50 py-4">
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button

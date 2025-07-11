@@ -82,15 +82,11 @@ export default function Hero({ scrollToSection }: HeroProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
             </div>
 
-            {/* Floating Cards */}
-            <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg hidden md:block">
-              <div className="text-2xl font-bold text-teal-600">5+</div>
-              <div className="text-sm text-gray-600">Anos de Experiência</div>
-            </div>
-
-            <div className="absolute -top-4 -right-4 bg-white p-4 rounded-xl shadow-lg hidden md:block">
-              <div className="text-2xl font-bold text-pink-500">100+</div>
-              <div className="text-sm text-gray-600">Famílias Atendidas</div>
+            {/* Simple overlay badge */}
+            <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg">
+              <p className="text-sm font-medium text-gray-800">
+                Cuidado Especializado em ABA
+              </p>
             </div>
           </div>
         </div>

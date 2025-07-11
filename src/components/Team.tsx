@@ -5,18 +5,18 @@ import { Star } from "lucide-react";
 export default function Team() {
   const teamMembers = [
     {
-      name: "Dra. Maria Silva",
-      role: "Analista do Comportamento",
-      image: "/placeholder.svg?height=300&width=300",
-      description:
-        "Especialista em ABA com mais de 8 anos de experiência no desenvolvimento infantil.",
-    },
-    {
-      name: "Dr. João Santos",
-      role: "Psicólogo Clínico",
-      image: "/placeholder.svg?height=300&width=300",
+      name: "Dra. Yaponira Barradas",
+      role: "Neuropsicóloga",
+      image: "/yaponira2.png?height=300&width=300",
       description:
         "Focado em terapias comportamentais e desenvolvimento de habilidades sociais.",
+    },
+    {
+      name: "Ana Paula Silva",
+      role: "Pedagoga e Coordenadora",
+      image: "/vei.png?height=300&width=300",
+      description:
+        "Especialista em ABA com mais de 8 anos de experiência no desenvolvimento infantil.",
     },
     {
       name: "Dra. Ana Costa",

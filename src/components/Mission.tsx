@@ -1,7 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Play,
+  Pause,
+  Heart,
+  Users,
+  Target,
+} from "lucide-react";
 
 export default function Mission() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -92,29 +100,35 @@ export default function Mission() {
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 md:gap-6 pt-6 md:pt-8">
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-teal-600">
-                  5+
+            {/* Replace the Stats section with Values */}
+            {/* Values */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 pt-6 md:pt-8">
+              <div className="text-center md:text-left">
+                <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-xl flex items-center justify-center mb-3 mx-auto md:mx-0">
+                  <Heart className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-sm md:text-base text-gray-600">Anos</div>
+                <div className="text-lg font-semibold text-gray-900">
+                  Cuidado
+                </div>
+                <div className="text-sm text-gray-600">Personalizado</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-pink-500">
-                  100+
+              <div className="text-center md:text-left">
+                <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl flex items-center justify-center mb-3 mx-auto md:mx-0">
+                  <Users className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-sm md:text-base text-gray-600">
-                  Famílias
+                <div className="text-lg font-semibold text-gray-900">
+                  Equipe
                 </div>
+                <div className="text-sm text-gray-600">Especializada</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-yellow-500">
-                  95%
+              <div className="text-center md:text-left">
+                <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center mb-3 mx-auto md:mx-0">
+                  <Target className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-sm md:text-base text-gray-600">
-                  Satisfação
+                <div className="text-lg font-semibold text-gray-900">
+                  Resultados
                 </div>
+                <div className="text-sm text-gray-600">Comprovados</div>
               </div>
             </div>
           </div>
