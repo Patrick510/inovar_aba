@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  Phone,
-  MapPin,
-} from "lucide-react";
+import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 interface FooterProps {
   scrollToSection: (sectionId: string) => void;
