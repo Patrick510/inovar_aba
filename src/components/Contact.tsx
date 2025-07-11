@@ -15,8 +15,18 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+
+    const { name, phone, message } = formData;
+
+    const text = `Olá, meu nome é ${name}.\nMeu telefone é: ${phone}\n\nMensagem:\n${message}`;
+
+    const encodedText = encodeURIComponent(text);
+
+    const whatsappNumber = "5567993171331"; // DDI + DDD + número, sem +
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+    window.open(whatsappURL, "_blank"); // Abre o WhatsApp em nova aba
   };
 
   const handleChange = (
@@ -162,25 +172,6 @@ export default function Contact() {
 
               <div>
                 <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-2"
-                >
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
-                  placeholder="seu@email.com"
-                />
-              </div>
-
-              <div>
-                <label
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
@@ -201,6 +192,7 @@ export default function Contact() {
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-teal-500 to-pink-400 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center"
+                onSubmit={handleSubmit}
               >
                 Enviar Mensagem
                 <Send className="ml-2 w-5 h-5" />
