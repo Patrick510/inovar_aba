@@ -1,7 +1,11 @@
 import { useState } from "react";
-import HeaderDiv from "./components/HeaderDiv";
-import FooterDiv from "./components/FooterDiv";
-import Section from "./components/Section";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Mission from "./components/Mission";
+import Team from "./components/Team";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function InovarABALanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,22 +20,21 @@ export default function InovarABALanding() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
-        <HeaderDiv
-          isMenuOpen={isMenuOpen}
-          setIsMenuOpen={setIsMenuOpen}
-          scrollToSection={scrollToSection}
-        />
-      </header>
+      <Header
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        scrollToSection={scrollToSection}
+      />
 
-      {/* Section */}
-      <Section scrollToSection={scrollToSection} />
+      <main>
+        <Hero scrollToSection={scrollToSection} />
+        <About />
+        <Mission />
+        <Team />
+        <Contact />
+      </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <FooterDiv scrollToSection={scrollToSection} />
-      </footer>
+      <Footer scrollToSection={scrollToSection} />
     </div>
   );
 }

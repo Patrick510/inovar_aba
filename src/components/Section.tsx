@@ -22,24 +22,23 @@ export default function Section({ scrollToSection }: SectionProps) {
       {/* About Section */}
       <section
         id="about"
-        className="py-20 bg-white"
-        style={{ marginLeft: "3rem", marginRight: "3rem" }}
+        className="py-12 md:py-20 bg-white px-4 md:px-8 lg:px-12"
       >
         <SectionAbout />
       </section>
 
-      {/* Misson Section */}
-      <section className="bg-gradient-to-r from-teal-50 to-pink-50 rounded-2xl p-8">
+      {/* Mission Section */}
+      <section className="bg-gradient-to-r from-teal-50 to-pink-50 rounded-none md:rounded-2xl mx-0 md:mx-4 lg:mx-8 p-4 md:p-8">
         <MissionCarousel />
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-20 bg-gray-50 ">
+      <section id="team" className="py-12 md:py-20 bg-gray-50">
         <SectionTeam />
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-12 md:py-20 bg-white">
         <SectionContact />
       </section>
     </>
