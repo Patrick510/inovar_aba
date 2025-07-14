@@ -1,19 +1,24 @@
-import { LinkIcon } from "lucide-react";
-
 export default function Partners() {
   const partners = [
-    { name: "Kumon", logo: "/kumon.png?height=100&width=200" },
+    {
+      name: "Kumon",
+      logo: "/kumon.png?height=100&width=200",
+      link: "https://www.instagram.com/kumontlcentro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    },
     {
       name: "Escolinha Raira Freitas",
       logo: "/raira.jpeg?height=100&width=200",
+      link: "https://www.instagram.com/escolinhafut.raira?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
-    // {
-    //   name: "Escolinha de Capoeira",
-    //   logo: "/placeholder.svg?height=100&width=200",
-    // },
+    {
+      name: "Abada Capoeira Três Lagoas",
+      logo: "/abada.jpeg?height=100&width=200",
+      link: "https://www.instagram.com/abadacapoeiratreslagoas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    },
     {
       name: "Meditação Celinei",
       logo: "/celinei.webp?height=100&width=200",
+      link: "https://www.instagram.com/mariacelinei?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
   ];
 
@@ -51,17 +56,29 @@ export default function Partners() {
         {/* Partners Logos */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 items-center justify-items-center mb-16">
           {partners.map((partner, index) => (
-            <div key={index} className="flex flex-col items-center space-y-3">
-              <img
-                src={partner.logo || "/placeholder.svg"}
-                alt={partner.name}
-                width={150}
-                height={75}
-                className="object-contain h-16 md:h-20 w-auto rounded-4xl"
-              />
-              <span className="text-gray-700 text-sm md:text-base font-medium text-center">
-                {partner.name}
-              </span>
+            <div
+              key={index}
+              className="flex flex-col items-center space-y-3 justify-center"
+            >
+              <a
+                href={partner.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                id="parceiros"
+                className="flex flex-col items-center justify-center text-center" //
+              >
+                <img
+                  src={partner.logo || "/placeholder.svg"}
+                  alt={partner.name}
+                  width={150}
+                  height={75}
+                  className="object-contain h-16 md:h-20 w-auto rounded-4xl"
+                />
+                <span className="text-gray-700 text-sm md:text-base font-medium mt-2">
+                  {/* Adicionado mt-2 para espaçamento entre imagem e texto */}
+                  {partner.name}
+                </span>
+              </a>
             </div>
           ))}
         </div>
@@ -73,7 +90,6 @@ export default function Partners() {
               Links Úteis
             </span>
           </div>
-
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             Acesso Rápido a
             <span className="bg-gradient-to-r from-teal-500 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
@@ -81,7 +97,6 @@ export default function Partners() {
               Informações
             </span>
           </h3>
-
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             {additionalLinks.map((link, index) => (
               <a
