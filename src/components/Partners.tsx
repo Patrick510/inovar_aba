@@ -2,10 +2,10 @@ import { LinkIcon } from "lucide-react";
 
 export default function Partners() {
   const partners = [
-    { name: "Kumon", logo: "/placeholder.svg?height=100&width=200" },
+    { name: "Kumon", logo: "/kumon.png?height=100&width=200" },
     {
       name: "Escolinha Raira Freitas",
-      logo: "/placeholder.svg?height=100&width=200",
+      logo: "/raira.jpeg?height=100&width=200",
     },
     {
       name: "Escolinha de Capoeira",
@@ -13,7 +13,7 @@ export default function Partners() {
     },
     {
       name: "Meditação Celinei",
-      logo: "/placeholder.svg?height=100&width=200",
+      logo: "/celinei.webp?height=100&width=200",
     },
   ];
 
@@ -57,7 +57,7 @@ export default function Partners() {
                 alt={partner.name}
                 width={150}
                 height={75}
-                className="object-contain h-16 md:h-20 w-auto"
+                className="object-contain h-16 md:h-20 w-auto rounded-4xl"
               />
               <span className="text-gray-700 text-sm md:text-base font-medium text-center">
                 {partner.name}
@@ -67,7 +67,7 @@ export default function Partners() {
         </div>
 
         {/* Additional Links */}
-        <div className="text-center mb-12 md:mb-16">
+        {/* <div className="text-center mb-12 md:mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-100 to-cyan-100 rounded-full mb-6">
             <span className="text-teal-700 font-medium text-sm">
               Links Úteis
@@ -94,7 +94,7 @@ export default function Partners() {
               </a>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
