@@ -7,10 +7,10 @@ export default function Partners() {
       name: "Escolinha Raira Freitas",
       logo: "/raira.jpeg?height=100&width=200",
     },
-    {
-      name: "Escolinha de Capoeira",
-      logo: "/placeholder.svg?height=100&width=200",
-    },
+    // {
+    //   name: "Escolinha de Capoeira",
+    //   logo: "/placeholder.svg?height=100&width=200",
+    // },
     {
       name: "Meditação Celinei",
       logo: "/celinei.webp?height=100&width=200",
@@ -25,7 +25,7 @@ export default function Partners() {
   ];
 
   return (
-    <section id="partners" className="py-16 md:py-24 bg-white">
+    <section id="partners" className="py-16 md:py-24 bg-white mb-[-7rem]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-100 to-cyan-100 rounded-full mb-6">
