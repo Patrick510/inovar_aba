@@ -6,6 +6,7 @@ import Mission from "./components/Mission";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Partners from "./components/Partners";
 
 export default function InovarABALanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +32,7 @@ export default function InovarABALanding() {
         <About />
         <Mission />
         <Team />
+        <Partners />
         <Contact />
       </main>
 

@@ -1,6 +1,13 @@
 "use client";
 
-import { Instagram, Mail, Phone, MapPin } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 interface FooterProps {
   scrollToSection: (sectionId: string) => void;
@@ -12,23 +19,20 @@ export default function Footer({ scrollToSection }: FooterProps) {
     { id: "about", label: "Sobre" },
     { id: "mission", label: "Missão" },
     { id: "team", label: "Equipe" },
+    { id: "partners", label: "Parceiros" }, // Added partners to navigation
     { id: "contact", label: "Contato" },
   ];
 
   const socialLinks = [
-    // { icon: Facebook, href: "#", label: "Facebook" },
-    {
-      icon: Instagram,
-      href: "https://www.instagram.com/inovar_aba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      label: "Instagram",
-    },
-    // { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
 
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-2">

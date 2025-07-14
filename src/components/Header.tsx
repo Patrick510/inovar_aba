@@ -21,6 +21,7 @@ export default function Header({
     { id: "about", label: "Sobre" },
     { id: "mission", label: "Missão" },
     { id: "team", label: "Equipe" },
+    { id: "partners", label: "Parceiros" }, // Added partners to navigation
     { id: "contact", label: "Contato" },
   ];
 
