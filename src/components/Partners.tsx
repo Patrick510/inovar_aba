@@ -22,12 +22,12 @@ export default function Partners() {
     },
   ];
 
-  const additionalLinks = [
-    { label: "Local", href: "#" },
-    { label: "Pais", href: "#" },
-    { label: "Administrativo", href: "#" },
-    { label: "Financeiro", href: "#" },
-  ];
+  // const additionalLinks = [
+  //   { label: "Local", href: "#" },
+  //   { label: "Pais", href: "#" },
+  //   { label: "Administrativo", href: "#" },
+  //   { label: "Financeiro", href: "#" },
+  // ];
 
   return (
     <section id="partners" className="py-16 md:py-24 bg-white mb-[-7rem]">
