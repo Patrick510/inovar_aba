@@ -30,6 +30,11 @@ export default function Partners() {
       logo: "/arianaterap.jpg?height=100&width=200",
       link: "https://www.instagram.com/arianasertorio",
     },
+    {
+      name: "Daniela Biomedicina",
+      logo: "/danielabio.jpg?height=100&width=200",
+      link: "https://www.instagram.com/danielaschiavuzzo",
+    },
   ];
 
   // const additionalLinks = [
