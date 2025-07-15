@@ -40,6 +40,11 @@ export default function Partners() {
       logo: "/atilapsica.jpg?height=100&width=200",
       link: "https://www.instagram.com/atila_quele_psica",
     },
+    {
+      name: "Sandra Psicóloga",
+      logo: "/sandrapsico.jpg?height=100&width=200",
+      link: "https://www.instagram.com/psi.sandravieiramota",
+    },
   ];
 
   // const additionalLinks = [
