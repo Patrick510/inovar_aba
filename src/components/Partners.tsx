@@ -35,6 +35,11 @@ export default function Partners() {
       logo: "/danielabio.jpg?height=100&width=200",
       link: "https://www.instagram.com/danielaschiavuzzo",
     },
+    {
+      name: "Átila Psicanalista",
+      logo: "/atilapsica.jpg?height=100&width=200",
+      link: "https://www.instagram.com/atila_quele_psica",
+    },
   ];
 
   // const additionalLinks = [
