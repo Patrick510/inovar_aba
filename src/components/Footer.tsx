@@ -10,7 +10,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
     { id: "about", label: "Sobre" },
     { id: "mission", label: "Missão" },
     { id: "team", label: "Equipe" },
-    { id: "partners", label: "Parceiros" }, // Added partners to navigation
+    { id: "partners", label: "Parceiros" },
     { id: "contact", label: "Contato" },
   ];
 
