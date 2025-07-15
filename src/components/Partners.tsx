@@ -3,22 +3,32 @@ export default function Partners() {
     {
       name: "Kumon",
       logo: "/kumon.png?height=100&width=200",
-      link: "https://www.instagram.com/kumontlcentro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      link: "https://www.instagram.com/kumontlcentro",
     },
     {
       name: "Escolinha Raira Freitas",
       logo: "/raira.jpeg?height=100&width=200",
-      link: "https://www.instagram.com/escolinhafut.raira?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      link: "https://www.instagram.com/escolinhafut.raira",
     },
     {
       name: "Abada Capoeira Três Lagoas",
       logo: "/abada.jpeg?height=100&width=200",
-      link: "https://www.instagram.com/abadacapoeiratreslagoas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      link: "https://www.instagram.com/abadacapoeiratreslagoas",
     },
     {
       name: "Meditação Celinei",
-      logo: "/celinei.webp?height=100&width=200",
-      link: "https://www.instagram.com/mariacelinei?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      logo: "/celinei.jpg?height=100&width=200",
+      link: "https://www.instagram.com/mariacelinei",
+    },
+    {
+      name: "Carol Fonoaudiologa",
+      logo: "/carolfono.jpg?height=100&width=200",
+      link: "https://www.instagram.com/carol_fonoaudiologa",
+    },
+    {
+      name: "Ariana Terapeuta Ocupacional",
+      logo: "/arianaterap.jpg?height=100&width=200",
+      link: "https://www.instagram.com/arianasertorio",
     },
   ];
 
