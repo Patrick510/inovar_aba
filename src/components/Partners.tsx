@@ -45,6 +45,11 @@ export default function Partners() {
       logo: "/sandrapsico.jpg?height=100&width=200",
       link: "https://www.instagram.com/psi.sandravieiramota",
     },
+    {
+      name: "Sâmela Nutricionista",
+      logo: "/samelanutri.jpg?height=100&width=200",
+      link: "https://www.instagram.com/samelamachado_",
+    },
   ];
 
   // const additionalLinks = [
