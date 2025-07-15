@@ -1,13 +1,4 @@
-"use client";
-
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  Phone,
-  MapPin,
-} from "lucide-react";
+import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 interface FooterProps {
   scrollToSection: (sectionId: string) => void;
@@ -24,9 +15,11 @@ export default function Footer({ scrollToSection }: FooterProps) {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/inovar_aba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      label: "Instagram",
+    },
   ];
 
   return (
@@ -59,6 +52,7 @@ export default function Footer({ scrollToSection }: FooterProps) {
                   href={social.href}
                   aria-label={social.label}
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-teal-500 hover:to-pink-400 transition-all duration-200"
+                  target="_blank"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
