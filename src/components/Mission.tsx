@@ -32,19 +32,14 @@ export default function Mission() {
       title: "Terapia ABA em Ação",
     },
     {
-      src: "/dinamica3.jpg?height=400&width=500",
-      alt: "Atividades terapêuticas",
-      title: "Atividades Terapêuticas",
-    },
-    {
       src: "/atividade1.jpg?height=400&width=500",
       alt: "Atividades de desenvolvimento",
       title: "Atividades de desenvolvimento",
     },
     {
-      src: "/dinamica2.jpg?height=400&width=500",
-      alt: "Cuidado profissional",
-      title: "Cuidado Profissional",
+      src: "/dinamica3.jpg?height=400&width=500",
+      alt: "Atividades terapêuticas",
+      title: "Atividades Terapêuticas",
     },
     {
       src: "/atividade2.jpg?height=400&width=500",
