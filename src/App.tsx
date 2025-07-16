@@ -7,7 +7,8 @@ import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Partners from "./components/Partners";
-import ServicesAndAtivaMax from "./components/ServicesAndAtivaMax";
+import Services from "./components/Services";
+import AtivaMaxSection from "./components/AtivaMaxSection";
 
 export default function InovarABALanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +33,8 @@ export default function InovarABALanding() {
         <Hero scrollToSection={scrollToSection} />
         <About />
         <Mission />
-        <ServicesAndAtivaMax />
+        <Services />
+        <AtivaMaxSection />
         <Team />
         <Partners />
         <Contact />

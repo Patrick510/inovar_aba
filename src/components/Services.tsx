@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   Stethoscope,
   Hand,
@@ -9,12 +8,16 @@ import {
   Mic,
   Smile,
   PlusCircle,
+  Users,
+  School,
 } from "lucide-react";
 
 export default function ServicesAndAtivaMax() {
-  const [showFullAtivaMaxText, setShowFullAtivaMaxText] = useState(false);
+  // Removido showFullAtivaMaxText, ativaMaxShortText, ativaMaxFullText pois AtivaMAX agora é um componente separado
 
   const services = [
+    { name: "Atende crianças, adolescentes e adultos", icon: Users },
+    { name: "Consultoria em escolas", icon: School },
     { name: "Atendente Terapia", icon: Stethoscope },
     { name: "Terapia Ocupacional", icon: Hand },
     { name: "Acompanhamento escolar", icon: GraduationCap },
@@ -26,12 +29,8 @@ export default function ServicesAndAtivaMax() {
     { name: "Mais Em Breve", icon: PlusCircle },
   ];
 
-  const ativaMaxShortText = `O AtivaMAX Saúde é o seu cartão de descontos para acesso facilitado a serviços essenciais. Embora não seja um plano de saúde, ele funciona como uma ponte para uma ampla rede de parceiros nas áreas de saúde, educação e lazer, garantindo preços reduzidos.`;
-
-  const ativaMaxFullText = `Com o AtivaMAX Saúde, você tem acesso a consultas médicas e terapêuticas, exames e medicamentos com valores mais acessíveis. Um de nossos destaques é o acesso à Terapia ABA (Análise do Comportamento Aplicada), entre diversas outras especialidades. Nosso compromisso é com a inclusão, por isso operamos com uma tabela social, possibilitando que pessoas de baixa renda tenham acesso a um tratamento adequado, de qualidade e que cabe no orçamento.`;
-
   return (
-    <section id="services-ativamax" className="py-16 md:py-24 bg-gray-50">
+    <section id="services-only" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Clínica 100% Supervisionada */}
         <div className="text-center mb-12 md:mb-16">
@@ -81,45 +80,6 @@ export default function ServicesAndAtivaMax() {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* AtivaMAX */}
-        <div className="bg-gradient-to-br from-white to-gray-50 p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100 text-center">
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-100 to-orange-100 rounded-full mb-6">
-            <span className="text-yellow-700 font-medium text-sm">
-              Parceria Especial
-            </span>
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Conheça o
-            <span className="bg-gradient-to-r from-yellow-500 via-amber-400 to-orange-500 bg-clip-text text-transparent">
-              {" "}
-              AtivaMAX Saúde
-            </span>
-          </h2>
-          <div className="flex justify-center mb-8">
-            <img
-              src="/ativamax.jpeg"
-              alt="AtivaMAX Saúde Logo"
-              width={200}
-              height={100}
-              className="object-contain rounded-4xl"
-            />
-          </div>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-4">
-            {ativaMaxShortText}
-          </p>
-          {showFullAtivaMaxText && (
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
-              {ativaMaxFullText}
-            </p>
-          )}
-          <button
-            onClick={() => setShowFullAtivaMaxText(!showFullAtivaMaxText)}
-            className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-400 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-          >
-            {showFullAtivaMaxText ? "Ler Menos" : "Ler Mais"}
-          </button>
         </div>
       </div>
     </section>
