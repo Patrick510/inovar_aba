@@ -13,8 +13,6 @@ import {
 } from "lucide-react";
 
 export default function ServicesAndAtivaMax() {
-  // Removido showFullAtivaMaxText, ativaMaxShortText, ativaMaxFullText pois AtivaMAX agora é um componente separado
-
   const services = [
     { name: "Atende crianças, adolescentes e adultos", icon: Users },
     { name: "Consultoria em escolas", icon: School },

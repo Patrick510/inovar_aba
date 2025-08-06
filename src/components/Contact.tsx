@@ -4,6 +4,10 @@ import { useState } from "react";
 import { MapPin, Clock, Send } from "lucide-react";
 import zap from "@/assets/whatsapp.svg";
 
+const ZapIcon = () => {
+  return <img src={zap} alt="WhatsApp" className="w-6 h-6" />;
+};
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -15,9 +19,9 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const { name, phone, message } = formData;
+    const { name, message } = formData;
 
-    const text = `Olá, meu nome é ${name}.\nMeu telefone é: ${phone}\n\nMensagem:\n${message}`;
+    const text = `Olá, meu nome é ${name}.\n\n\n${message}`;
 
     const encodedText = encodeURIComponent(text);
 
@@ -26,10 +30,6 @@ export default function Contact() {
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
 
     window.open(whatsappURL, "_blank");
-  };
-
-  const ZapIcon = () => {
-    return <img src={zap} alt="WhatsApp" className="w-6 h-6" />;
   };
 
   const handleChange = (
@@ -114,7 +114,7 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="bg-gradient-to-br from-gray-50 to-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid gap-4">
                 <div>
                   <label
                     htmlFor="name"
@@ -131,24 +131,6 @@ export default function Contact() {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
                     placeholder="Seu nome"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Telefone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
-                    placeholder="(67) 99999-9999"
                   />
                 </div>
               </div>
@@ -186,6 +168,7 @@ export default function Contact() {
         {/* Map placeholder */}
         <div className="overflow-hidden rounded-2xl h-64 md:h-80 mt-10">
           <iframe
+            title="Inovar ABA Location Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.5485496528504!2d-51.687970924750495!3d-20.769084380816103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9490990007029f59%3A0x4dd17511d8125abf!2sInovar%20ABA!5e0!3m2!1spt-BR!2sbr!4v1752240848984!5m2!1spt-BR!2sbr"
             width="100%"
             height="100%"

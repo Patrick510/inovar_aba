@@ -13,7 +13,7 @@ export default function Header({
   isMenuOpen,
   setIsMenuOpen,
   scrollToSection,
-}: HeaderProps) {
+}: Readonly<HeaderProps>) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
