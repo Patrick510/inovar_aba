@@ -22,19 +22,29 @@ export default function Mission() {
       title: "Ambiente Acolhedor",
     },
     {
-      src: "/ambiente2.jpg?height=400&width=500",
-      alt: "Espaços terapêuticos",
-      title: "Espaços Terapêuticos",
-    },
-    {
       src: "/dinamica1.jpg?height=400&width=500",
       alt: "Terapia ABA em ação",
       title: "Terapia ABA em Ação",
     },
     {
+      src: "/to.jpg?height=400&width=500",
+      alt: "Terapia ocupacional",
+      title: "Terapia ocupacional",
+    },
+    {
+      src: "/ambiente2.jpg?height=400&width=500",
+      alt: "Espaços terapêuticos",
+      title: "Espaços Terapêuticos",
+    },
+    {
       src: "/atividade1.jpg?height=400&width=500",
       alt: "Atividades de desenvolvimento",
       title: "Atividades de desenvolvimento",
+    },
+    {
+      src: "/sala2.jpg?height=400&width=500",
+      alt: "Sala de reforço",
+      title: "Sala de reforço",
     },
     {
       src: "/dinamica3.jpg?height=400&width=500",

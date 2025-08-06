@@ -20,6 +20,14 @@ export default function Team() {
         "Pedagoga especializada em Letramento e com formação em Análise do Comportamento Aplicada (ABA), Trabalho voltado ao desenvolvimento de habilidades e potencialização do aprendizado em crianças. ",
       color: "#F6F4FF",
     },
+    {
+      name: "Guiomar",
+      role: "Pedagoga",
+      image: "/guiomar.png?height=300&width=300",
+      description:
+        "Pedagoga especializada em Letramento e com formação em Análise do Comportamento Aplicada (ABA), Trabalho voltado ao desenvolvimento de habilidades e potencialização do aprendizado em crianças. ",
+      color: "#F6F4FF",
+    },
     // {
     //   name: "Guiomar",
     //   role: "Educadora Física",
