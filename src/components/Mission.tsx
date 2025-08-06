@@ -41,16 +41,6 @@ export default function Mission() {
       alt: "Atividades terapêuticas",
       title: "Atividades Terapêuticas",
     },
-    {
-      src: "/atividade2.jpg?height=400&width=500",
-      alt: "Atividades de desenvolvimento",
-      title: "Atividades de desenvolvimento",
-    },
-    {
-      src: "/atividade3.jpg?height=400&width=500",
-      alt: "Momentos de lazer",
-      title: "Momentos de lazer",
-    },
   ];
 
   useEffect(() => {

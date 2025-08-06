@@ -83,7 +83,7 @@ export default function AtivaMaxSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* AtivaMAX Logo and Benefits */}
           <div className="space-y-8 order-2 lg:order-1">
-            <div className="flex justify-center lg:justify-start mb-8">
+            <div className="flex justify-center lg:justify-center mb-8">
               <img
                 src="/ativamax.jpeg"
                 alt="AtivaMAX Saúde Logo"
