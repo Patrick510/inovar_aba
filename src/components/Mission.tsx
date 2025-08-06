@@ -27,14 +27,24 @@ export default function Mission() {
       title: "Terapia ABA em Ação",
     },
     {
-      src: "/to2.jpg?height=400&width=500",
+      src: "/to.jpg?height=400&width=500",
       alt: "Terapia ocupacional",
       title: "Terapia ocupacional",
     },
     {
-      src: "/to3.jpg?height=400&width=500",
+      src: "/to1.jpg?height=400&width=500",
       alt: "Terapia ocupacional",
       title: "Terapia ocupacional",
+    },
+    {
+      src: "/denver.jpg?height=400&width=500",
+      alt: "Terapia Denver",
+      title: "Terapia Denver",
+    },
+    {
+      src: "/denver1.jpg?height=400&width=500",
+      alt: "Terapia Denver",
+      title: "Terapia Denver",
     },
     {
       src: "/ambiente2.jpg?height=400&width=500",
@@ -45,11 +55,6 @@ export default function Mission() {
       src: "/atividade1.jpg?height=400&width=500",
       alt: "Atividades de desenvolvimento",
       title: "Atividades de desenvolvimento",
-    },
-    {
-      src: "/ambiente2.jpg?height=400&width=500",
-      alt: "Espaços terapêuticos",
-      title: "Espaços Terapêuticos",
     },
     {
       src: "/sala2.jpg?height=400&width=500",
