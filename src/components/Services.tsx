@@ -71,7 +71,7 @@ export default function ServicesAndAtivaMax() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+                className="flex flex-col justify-center items-center text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
               >
                 <service.icon className="w-8 h-8 text-teal-500 mb-3" />
                 <h4 className="text-lg font-semibold text-gray-800">
