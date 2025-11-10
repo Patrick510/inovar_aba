@@ -26,11 +26,6 @@ export default function Partners() {
       link: "https://www.instagram.com/carol_fonoaudiologa",
     },
     {
-      name: "Ariana Terapeuta Ocupacional",
-      logo: "/arianaterap.jpg?height=100&width=200",
-      link: "https://www.instagram.com/arianasertorio",
-    },
-    {
       name: "Daniela Biomedicina",
       logo: "/danielabio.jpg?height=100&width=200",
       link: "https://www.instagram.com/danielaschiavuzzo",
