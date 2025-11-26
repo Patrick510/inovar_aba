@@ -9,7 +9,7 @@ export default function Team() {
       role: "Neuropsicóloga | Especialista ABA",
       image: "/yaponira.png?height=300&width=300",
       description:
-        "Focado em terapias comportamentais e desenvolvimento de habilidades sociais. Abordagem Análise de Comportamento e Terapia Cognitiva Comportamental",
+        "Focado em terapias comportamentais e desenvolvimento de habilidades sociais. Abordagem Análise de Comportamento e Terapia Cognitiva Comportamental.",
       color: "#EDFDFF",
     },
     {
@@ -25,7 +25,7 @@ export default function Team() {
       role: "Pedagoga",
       image: "/guiomar.png?height=300&width=300",
       description:
-        "Especializada em intervenções precoces e programas de comunicação funcional. Pedagoga especializada em Letramento e com formação em Análise do Comportamento Aplicada (ABA), ",
+        "Especializada em intervenções precoces e programas de comunicação funcional. Pedagoga especializada em Letramento e com formação em Análise do Comportamento Aplicada (ABA) ",
       color: "#DEE7FF",
     },
     // {

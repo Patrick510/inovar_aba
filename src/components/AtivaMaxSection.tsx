@@ -1,3 +1,5 @@
+"use client";
+
 import {
   CheckCircle,
   Clock,
@@ -83,7 +85,7 @@ export default function AtivaMaxSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* AtivaMAX Logo and Benefits */}
           <div className="space-y-8 order-2 lg:order-1">
-            <div className="flex justify-center lg:justify-center mb-8">
+            <div className="flex justify-center lg:justify-start mb-8">
               <img
                 src="/ativamax.jpeg"
                 alt="AtivaMAX Saúde Logo"
@@ -111,6 +113,16 @@ export default function AtivaMaxSection() {
                   </p>
                 </div>
               ))}
+            </div>
+            <div className="flex justify-center lg:justify-start pt-4">
+              <a
+                href="https://cartaoativamaxsaude.plano10.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-yellow-500 to-orange-400 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
+                Conheça o AtivaMAX
+              </a>
             </div>
           </div>
 
