@@ -114,16 +114,6 @@ export default function AtivaMaxSection() {
                 </div>
               ))}
             </div>
-            <div className="flex justify-center lg:justify-start pt-4">
-              <a
-                href="https://cartaoativamaxsaude.plano10.com.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-yellow-500 to-orange-400 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-              >
-                Conheça o AtivaMAX
-              </a>
-            </div>
           </div>
 
           {/* Specialties */}
