@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -13,7 +13,7 @@ export default function Header({
   isMenuOpen,
   setIsMenuOpen,
   scrollToSection,
-}: Readonly<HeaderProps>) {
+}: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navItems = [
@@ -21,7 +21,7 @@ export default function Header({
     { id: "about", label: "Sobre" },
     { id: "mission", label: "Missão" },
     { id: "team", label: "Equipe" },
-    { id: "partners", label: "Parceiros" }, // Added partners to navigation
+    { id: "partners", label: "Parceiros" },
     { id: "contact", label: "Contato" },
   ];
 
@@ -70,6 +70,15 @@ export default function Header({
                 {item.label}
               </button>
             ))}
+            <a
+              href="https://cartaoativamaxsaude.plano10.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-500 to-orange-400 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+            >
+              AtivaMAX
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -99,6 +108,15 @@ export default function Header({
                   {item.label}
                 </button>
               ))}
+              <a
+                href="https://cartaoativamaxsaude.plano10.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-500 to-orange-400 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-200 mt-2"
+              >
+                AtivaMAX
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </nav>
           </div>
         )}
