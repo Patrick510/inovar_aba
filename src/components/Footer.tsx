@@ -57,6 +57,14 @@ export default function Footer({ scrollToSection }: FooterProps) {
                   <social.icon className="w-5 h-5" />
                 </a>
               ))}
+              <a
+                href={"https://cartaoativamaxsaude.plano10.com.br/"}
+                aria-label={"AtivaMax"}
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-yellow-500 hover:to-orange-400 transition-all duration-200"
+                target="_blank"
+              >
+                <img src="/ativamax.svg" alt="AtivaMax" className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
